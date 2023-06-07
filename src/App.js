@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
+import News from "./components/news"
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <>
+    <h1>Проект с новосями по API <a href="https://newsapi.org" target="_blank" rel="noreferrer">
+      newsapi
+    </a></h1>
+    <News/>
+  </>
 }
 
 export default App;
