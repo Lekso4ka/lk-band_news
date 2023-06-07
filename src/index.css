@@ -27,6 +27,9 @@ h1 {
   overflow: hidden;
   position: relative;
 }
+#root>p {
+  text-align: center;
+}
 /*.news__card h2::after {*/
 /*  content: "...";*/
 /*  position: absolute;*/

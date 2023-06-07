@@ -10,8 +10,6 @@ const News = () => {
     useEffect(() => {
         // Когда пользователь вводит от 3 букв - запрос на поиск новости с сервера
         if (inp.length > 2) {
-            console.log(inp);
-            console.log(key);
             fetch(`https://newsapi.org/v2/everything?apiKey=${key}&q=${inp}&language=ru&pageSize=21`)
                 .then(res => res.json())
                 .then(info => {
